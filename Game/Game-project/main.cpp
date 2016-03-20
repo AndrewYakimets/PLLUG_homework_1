@@ -36,6 +36,10 @@ int main(int argc, char *argv[])
             !pcWin;
             return a.closingDown();
         }
+        else if (pcVar == "Rock" && userVar == "Rock" || pcVar == "Paper" && userVar == "Paper" || pcVar == "Scissors" && userVar == "Scissors")
+        {
+            cout << "Draw!\n" << endl;
+        }
         else
         {
             cout << "Please, input only 'Rock', 'Scissors' or 'Paper'!\n" << endl;
