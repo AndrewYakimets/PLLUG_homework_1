@@ -15,5 +15,14 @@ int main(int argc, char *argv[])
     bool userWin = false;
     bool pcWin = false;
 
+    while(!userWin || !pcWin)
+    {
+        pcVar = pcVarArr[rand() % 2];
+
+        cout << "\nEnter Rock, Scissors or Paper: ";
+
+        cin >> userVar;
+    }
+
     return a.exec();
 }
