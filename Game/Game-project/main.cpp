@@ -22,6 +22,18 @@ int main(int argc, char *argv[])
         cout << "\nEnter Rock, Scissors or Paper: ";
 
         cin >> userVar;
+
+
+        if (userVar == "Rock" && pcVar == "Scissors" || userVar == "Paper" && pcVar == "Rock" || userVar == "Scissors" && pcVar == "Paper")
+        {
+            cout << "You win!\n" << endl;
+            !userWin;
+            return a.closingDown();
+        }
+        else
+        {
+            cout << "Please, input only 'Rock', 'Scissors' or 'Paper'!\n" << endl;
+        }
     }
 
     return a.exec();
